@@ -23,7 +23,9 @@ default: &default
 
 development:
   <<: *default
-  database: heroku_postgresql_db_development
+  # database: heroku_postgresql_db_development
+  url: postgres://nagbszxbznnukj:7f5ffccd88ad42ecfed029d3f53edbe70c0ef93638b020c962510557c5696e76@ec2-50-16-221-180.compute-1.amazonaws.com:5432/db0qs0dpjbgncf
+  
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
